@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		663F6B5B227DC829007962FB /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5A227DC828007962FB /* airports.json */; };
+		663F6B5F227DC836007962FB /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5C227DC836007962FB /* countries.json */; };
+		663F6B60227DC836007962FB /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5D227DC836007962FB /* cities.json */; };
+		663F6B61227DC836007962FB /* country_cases.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5E227DC836007962FB /* country_cases.json */; };
 		66A5D1CD227CC1C5009BF9FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5D1CC227CC1C5009BF9FE /* AppDelegate.m */; };
 		66A5D1D5227CC1C5009BF9FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A5D1D4227CC1C5009BF9FE /* Assets.xcassets */; };
 		66A5D1D8227CC1C5009BF9FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A5D1D6227CC1C5009BF9FE /* LaunchScreen.storyboard */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		663F6B5A227DC828007962FB /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		663F6B5C227DC836007962FB /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		663F6B5D227DC836007962FB /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		663F6B5E227DC836007962FB /* country_cases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = country_cases.json; sourceTree = "<group>"; };
 		66A5D1C8227CC1C5009BF9FE /* AirlineTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirlineTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A5D1CB227CC1C5009BF9FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66A5D1CC227CC1C5009BF9FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +57,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		663F6B59227DC807007962FB /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				663F6B5D227DC836007962FB /* cities.json */,
+				663F6B5C227DC836007962FB /* countries.json */,
+				663F6B5E227DC836007962FB /* country_cases.json */,
+				663F6B5A227DC828007962FB /* airports.json */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
 		66A5D1BF227CC1C5009BF9FE = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +91,7 @@
 				66A5D1CC227CC1C5009BF9FE /* AppDelegate.m */,
 				66A5D1E3227D76C6009BF9FE /* MainViewController.h */,
 				66A5D1E4227D76C6009BF9FE /* MainViewController.m */,
+				663F6B59227DC807007962FB /* Jsons */,
 				66A5D1E6227D7846009BF9FE /* Objects */,
 				66A5D1F0227D7B1D009BF9FE /* DataManager.h */,
 				66A5D1F1227D7B1D009BF9FE /* DataManager.m */,
@@ -154,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A5D1D8227CC1C5009BF9FE /* LaunchScreen.storyboard in Resources */,
+				663F6B60227DC836007962FB /* cities.json in Resources */,
 				66A5D1D5227CC1C5009BF9FE /* Assets.xcassets in Resources */,
+				663F6B5F227DC836007962FB /* countries.json in Resources */,
+				663F6B61227DC836007962FB /* country_cases.json in Resources */,
+				663F6B5B227DC829007962FB /* airports.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
