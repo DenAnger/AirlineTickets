@@ -70,7 +70,7 @@
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:type];
     NSData *data = [NSData dataWithContentsOfFile:path];
-    return [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    return [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: nil]; // breakpoint показывает, что ошибка возникает здесь из-за возвращения nil
 }
 
 - (NSArray *)countries
