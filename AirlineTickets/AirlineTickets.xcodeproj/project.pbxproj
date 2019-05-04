@@ -16,6 +16,7 @@
 		66A5D1E9227D7882009BF9FE /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5D1E8227D7882009BF9FE /* Country.m */; };
 		66A5D1EC227D793C009BF9FE /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5D1EB227D793C009BF9FE /* City.m */; };
 		66A5D1EF227D79D5009BF9FE /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5D1EE227D79D5009BF9FE /* Airport.m */; };
+		66A5D1F2227D7B1D009BF9FE /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5D1F1227D7B1D009BF9FE /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		66A5D1EB227D793C009BF9FE /* City.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		66A5D1ED227D79D5009BF9FE /* Airport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Airport.h; sourceTree = "<group>"; };
 		66A5D1EE227D79D5009BF9FE /* Airport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
+		66A5D1F0227D7B1D009BF9FE /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		66A5D1F1227D7B1D009BF9FE /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				66A5D1E4227D76C6009BF9FE /* MainViewController.m */,
 				66A5D1E1227CC517009BF9FE /* Main.storyboard */,
 				66A5D1E6227D7846009BF9FE /* Objects */,
+				66A5D1F0227D7B1D009BF9FE /* DataManager.h */,
+				66A5D1F1227D7B1D009BF9FE /* DataManager.m */,
 				66A5D1D4227CC1C5009BF9FE /* Assets.xcassets */,
 				66A5D1D6227CC1C5009BF9FE /* LaunchScreen.storyboard */,
 				66A5D1D9227CC1C5009BF9FE /* Info.plist */,
@@ -166,6 +171,7 @@
 			files = (
 				66A5D1EC227D793C009BF9FE /* City.m in Sources */,
 				66A5D1E9227D7882009BF9FE /* Country.m in Sources */,
+				66A5D1F2227D7B1D009BF9FE /* DataManager.m in Sources */,
 				66A5D1DB227CC1C5009BF9FE /* main.m in Sources */,
 				66A5D1EF227D79D5009BF9FE /* Airport.m in Sources */,
 				66A5D1E5227D76C6009BF9FE /* MainViewController.m in Sources */,
