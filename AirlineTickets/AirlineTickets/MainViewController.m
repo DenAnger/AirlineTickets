@@ -19,7 +19,7 @@
     [super viewDidLoad];
     [[DataManager sharedInstance] loadData];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor blueColor];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadDataComplete) name:kDataManagerLoadDataDidComplete object:nil];
 }
