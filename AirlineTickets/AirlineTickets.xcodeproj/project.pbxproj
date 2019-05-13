@@ -21,6 +21,7 @@
 		66A5D1EC227D793C009BF9FE /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5D1EB227D793C009BF9FE /* City.m */; };
 		66A5D1EF227D79D5009BF9FE /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5D1EE227D79D5009BF9FE /* Airport.m */; };
 		66A5D1F2227D7B1D009BF9FE /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5D1F1227D7B1D009BF9FE /* DataManager.m */; };
+		66B35F20228A0753008C6A80 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B35F1F228A0753008C6A80 /* APIManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		66A5D1EE227D79D5009BF9FE /* Airport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
 		66A5D1F0227D7B1D009BF9FE /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		66A5D1F1227D7B1D009BF9FE /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		66B35F1E228A0753008C6A80 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		66B35F1F228A0753008C6A80 /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				66A5D1E4227D76C6009BF9FE /* MainViewController.m */,
 				663F6B59227DC807007962FB /* Jsons */,
 				66A5D1E6227D7846009BF9FE /* Objects */,
+				66B35F1E228A0753008C6A80 /* APIManager.h */,
+				66B35F1F228A0753008C6A80 /* APIManager.m */,
 				66A5D1F0227D7B1D009BF9FE /* DataManager.h */,
 				66A5D1F1227D7B1D009BF9FE /* DataManager.m */,
 				665977A22281FF6C005D6884 /* PlaceViewController.h */,
@@ -198,6 +203,7 @@
 			files = (
 				66A5D1EC227D793C009BF9FE /* City.m in Sources */,
 				66A5D1E9227D7882009BF9FE /* Country.m in Sources */,
+				66B35F20228A0753008C6A80 /* APIManager.m in Sources */,
 				66A5D1F2227D7B1D009BF9FE /* DataManager.m in Sources */,
 				66A5D1DB227CC1C5009BF9FE /* main.m in Sources */,
 				665977A42281FF6C005D6884 /* PlaceViewController.m in Sources */,
