@@ -10,6 +10,7 @@
 #import "APIManager.h"
 #import "DataManager.h"
 #import "PlaceViewController.h"
+#import "TicketsViewController.h"
 #import "SearchRequest.h"
 
 @interface MainViewController()<PlaceViewControllerDelegate>
@@ -66,7 +67,8 @@
     _searchButton.layer.cornerRadius = 8.0;
     _searchButton.titleLabel.font = [UIFont systemFontOfSize:20.0 weight:UIFontWeightBold];
     [self.view addSubview:_searchButton];
-    
+    [_searchButton addTarget:self action:@selector(searchButtonDidTap:) forControlEvents:UIControlEventTouchUpInside];
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataLoadedSuccessfully) name:kDataManagerLoadDataDidComplete object:nil];
 }
 
@@ -80,7 +82,6 @@
     }];
 }
 
-
 - (void)placeButtonDidTap:(UIButton *)sender {
     PlaceViewController *placeViewController;
     if ([sender isEqual:_departureButton]) {
@@ -91,6 +92,20 @@
     placeViewController.delegate = self;
     [self.navigationController pushViewController: placeViewController animated:YES];
 }
+
+- (void)searchButtonDidTap:(UIButton *)sender {
+    [[APIManager sharedInstance] ticketsWithRequest:_searchRequest withCompletion:^(NSArray *tickets) {
+        if (tickets.count > 0) {
+            TicketsViewController *ticketsViewController = [[TicketsViewController alloc] initWithTickets:tickets];
+            [self.navigationController showViewController:ticketsViewController sender:self];
+        } else {
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Увы!" message:@"По данному направлению билетов не найдено" preferredStyle: UIAlertControllerStyleAlert];
+            [alertController addAction:[UIAlertAction actionWithTitle:@"Закрыть" style:(UIAlertActionStyleDefault) handler:nil]];
+            [self presentViewController:alertController animated:YES completion:nil];
+        }
+    }];
+}
+
 
 - (void)loadDataComplete
 {

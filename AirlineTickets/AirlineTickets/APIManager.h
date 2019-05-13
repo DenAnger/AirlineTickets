@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "APIManager.h"
 #import "DataManager.h"
 
 NS_ASSUME_NONNULL_BEGIN

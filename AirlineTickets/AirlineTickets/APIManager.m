@@ -7,6 +7,8 @@
 //
 
 #import "APIManager.h"
+#import "SearchRequest.h"
+#import "Ticket.h"
 #define API_TOKEN @"fa69a94bf2ef2cb15a6aa0f0689a60a2"
 #define API_URL_IP_ADDRESS @"https://api.ipify.org/?format=json"
 #define API_URL_CHEAP @"https://api.travelpayouts.com/v1/prices/cheap"
@@ -57,6 +59,27 @@
         });
         completion([NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil]);
     }] resume] ;
+}
+
+- (void)ticketsWithRequest:(SearchRequest)request withCompletion:(void (^)(NSArray *tickets))completion {
+    NSString *urlString = [NSString stringWithFormat:@"%@?%@&token=%@", API_URL_CHEAP, SearchRequestQuery(request), API_TOKEN];
+    [self load:urlString withCompletion:^(id  _Nullable result) {
+        NSDictionary *response = result;
+        if (response) {
+            NSDictionary *json = [[response valueForKey:@"data"] valueForKey:request.destionation];
+            NSMutableArray *array = [NSMutableArray new];
+            for (NSString *key in json) {
+                NSDictionary *value = [json valueForKey: key];
+                Ticket *ticket = [[Ticket alloc] initWithDictionary:value];
+                ticket.from = request.origin;
+                ticket.to = request.destionation;
+                [array addObject:ticket];
+            }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(array);
+            });
+        }
+    }];
 }
 
 @end

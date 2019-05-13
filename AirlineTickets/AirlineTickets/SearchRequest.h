@@ -14,4 +14,15 @@ typedef struct SearchRequest {
     __unsafe_unretained NSDate *departDate;
     __unsafe_unretained NSDate *returnDate;
 } SearchRequest;
+
+NSString * SearchRequestQuery(SearchRequest request) {
+    NSString *result = [NSString stringWithFormat:@"origin=%@&destination=%@", request.origin, request.destionation];
+    if (request.departDate && request.returnDate) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"yyyy-MM";
+        result = [NSString stringWithFormat:@"%@&depart_date=%@&return_date=%@", result, [dateFormatter stringFromDate:request.departDate], [dateFormatter stringFromDate:request.returnDate]];
+    }
+    return result;
+}
+
 #endif /* SearchRequest_h */
