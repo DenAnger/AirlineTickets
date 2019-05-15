@@ -7,11 +7,7 @@
 //
 
 #import "APIManager.h"
-#import "SearchRequest.h"
 #import "Ticket.h"
-#import "DataManager.h"
-#import "PlaceViewController.h"
-#import "MainViewController.h"
 #define API_TOKEN @"fa69a94bf2ef2cb15a6aa0f0689a60a2"
 #define API_URL_IP_ADDRESS @"https://api.ipify.org/?format=json"
 #define API_URL_CHEAP @"https://api.travelpayouts.com/v1/prices/cheap"

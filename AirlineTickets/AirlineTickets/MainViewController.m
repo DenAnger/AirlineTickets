@@ -8,10 +8,8 @@
 
 #import "MainViewController.h"
 #import "APIManager.h"
-#import "DataManager.h"
 #import "PlaceViewController.h"
 #import "TicketsViewController.h"
-#import "SearchRequest.h"
 
 @interface MainViewController()<PlaceViewControllerDelegate>
 @property (nonatomic, strong) UIView *placeContainerView;

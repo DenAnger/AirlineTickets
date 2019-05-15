@@ -6,7 +6,6 @@
 //  Copyright © 2019 Станислав Лемешаев. All rights reserved.
 //
 
-#import "APIManager.h"
 #import "DataManager.h"
 
 @interface DataManager ()
