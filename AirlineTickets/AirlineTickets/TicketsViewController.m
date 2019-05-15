@@ -28,6 +28,9 @@
     return self;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
 
 #pragma mark - UITableViewDataSource & UITableViewDelegate
 

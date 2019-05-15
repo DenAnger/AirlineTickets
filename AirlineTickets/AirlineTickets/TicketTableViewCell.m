@@ -7,6 +7,7 @@
 //
 
 #import "TicketTableViewCell.h"
+#import "Ticket.h"
 #import <YYWebImage/YYWebImage.h>
 #define AirlineLogo(iata) [NSURL URLWithString:[NSString stringWithFormat:@"https://pics.avs.io/200/200/%@.png", iata]];
 

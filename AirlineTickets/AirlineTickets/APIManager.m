@@ -9,6 +9,9 @@
 #import "APIManager.h"
 #import "SearchRequest.h"
 #import "Ticket.h"
+#import "DataManager.h"
+#import "PlaceViewController.h"
+#import "MainViewController.h"
 #define API_TOKEN @"fa69a94bf2ef2cb15a6aa0f0689a60a2"
 #define API_URL_IP_ADDRESS @"https://api.ipify.org/?format=json"
 #define API_URL_CHEAP @"https://api.travelpayouts.com/v1/prices/cheap"
@@ -66,13 +69,13 @@
     [self load:urlString withCompletion:^(id  _Nullable result) {
         NSDictionary *response = result;
         if (response) {
-            NSDictionary *json = [[response valueForKey:@"data"] valueForKey:request.destionation];
+            NSDictionary *json = [[response valueForKey:@"data"] valueForKey:request.destination];
             NSMutableArray *array = [NSMutableArray new];
             for (NSString *key in json) {
                 NSDictionary *value = [json valueForKey: key];
                 Ticket *ticket = [[Ticket alloc] initWithDictionary:value];
                 ticket.from = request.origin;
-                ticket.to = request.destionation;
+                ticket.to = request.destination;
                 [array addObject:ticket];
             }
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -80,6 +83,16 @@
             });
         }
     }];
+}
+
+NSString *SearchRequestQuery(SearchRequest request) {
+    NSString *result = [NSString stringWithFormat:@"origin=%@&destination=%@", request.origin, request.destination];
+    if (request.departDate && request.returnDate) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"yyyy-MM";
+        result = [NSString stringWithFormat:@"%@&depart_date=%@&return_date=%@", result, [dateFormatter stringFromDate:request.departDate], [dateFormatter stringFromDate:request.returnDate]];
+    }
+    return result;
 }
 
 @end

@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "APIManager.h"
 #import "DataManager.h"
+#import "SearchRequest.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface APIManager : NSObject
 + (instancetype)sharedInstance;
 - (void)cityForCurrentIP:(void (^)(City *city))completion;
+- (void)ticketsWithRequest:(SearchRequest)request withCompletion:(void (^)(NSArray *tickets))completion;
 @end
 
 NS_ASSUME_NONNULL_END
