@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#define kLocationServiceDidUpdateCurrentLocation @"LocationServiceDidUpdateCurrentLocation"
 
 NS_ASSUME_NONNULL_BEGIN
 
