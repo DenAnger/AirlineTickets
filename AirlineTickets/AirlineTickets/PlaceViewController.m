@@ -7,7 +7,6 @@
 //
 
 #import "PlaceViewController.h"
-#import "DataManager.h"
 #define ReuseIdentifier @"CellIdentifier"
 
 @interface PlaceViewController ()
