@@ -11,6 +11,7 @@
 		6618C5742292BF1700EB4A97 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6618C5732292BF1700EB4A97 /* LocationService.m */; };
 		6618C5772292C27600EB4A97 /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6618C5762292C27600EB4A97 /* MapPrice.m */; };
 		6618C57A2292C59B00EB4A97 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6618C5792292C59B00EB4A97 /* MapViewController.m */; };
+		663A30CE229BFD7D00F4EF56 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663A30CD229BFD7D00F4EF56 /* TabBarController.m */; };
 		663F6B5B227DC829007962FB /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5A227DC828007962FB /* airports.json */; };
 		663F6B5F227DC836007962FB /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5C227DC836007962FB /* countries.json */; };
 		663F6B60227DC836007962FB /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5D227DC836007962FB /* cities.json */; };
@@ -38,6 +39,8 @@
 		6618C5762292C27600EB4A97 /* MapPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
 		6618C5782292C59B00EB4A97 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		6618C5792292C59B00EB4A97 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		663A30CC229BFD7D00F4EF56 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		663A30CD229BFD7D00F4EF56 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		663F6B5A227DC828007962FB /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
 		663F6B5C227DC836007962FB /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		663F6B5D227DC836007962FB /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				6618C5762292C27600EB4A97 /* MapPrice.m */,
 				6618C5782292C59B00EB4A97 /* MapViewController.h */,
 				6618C5792292C59B00EB4A97 /* MapViewController.m */,
+				663A30CC229BFD7D00F4EF56 /* TabBarController.h */,
+				663A30CD229BFD7D00F4EF56 /* TabBarController.m */,
 				66A5D1D4227CC1C5009BF9FE /* Assets.xcassets */,
 				66A5D1D6227CC1C5009BF9FE /* LaunchScreen.storyboard */,
 				66A5D1D9227CC1C5009BF9FE /* Info.plist */,
@@ -290,6 +295,7 @@
 				66B35F2F228A2B7A008C6A80 /* TicketsViewController.m in Sources */,
 				66A5D1EF227D79D5009BF9FE /* Airport.m in Sources */,
 				6618C57A2292C59B00EB4A97 /* MapViewController.m in Sources */,
+				663A30CE229BFD7D00F4EF56 /* TabBarController.m in Sources */,
 				66A5D1E5227D76C6009BF9FE /* MainViewController.m in Sources */,
 				66A5D1CD227CC1C5009BF9FE /* AppDelegate.m in Sources */,
 			);
