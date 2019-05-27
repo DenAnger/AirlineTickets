@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		59546DAF753E24E747AE4340 /* libPods-AirlineTickets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB108209D9C07FAF7BD0511 /* libPods-AirlineTickets.a */; };
+		6618C5742292BF1700EB4A97 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6618C5732292BF1700EB4A97 /* LocationService.m */; };
+		6618C5772292C27600EB4A97 /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6618C5762292C27600EB4A97 /* MapPrice.m */; };
+		6618C57A2292C59B00EB4A97 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6618C5792292C59B00EB4A97 /* MapViewController.m */; };
 		663F6B5B227DC829007962FB /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5A227DC828007962FB /* airports.json */; };
 		663F6B5F227DC836007962FB /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5C227DC836007962FB /* countries.json */; };
 		663F6B60227DC836007962FB /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 663F6B5D227DC836007962FB /* cities.json */; };
@@ -29,6 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6618C5722292BF1700EB4A97 /* LocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		6618C5732292BF1700EB4A97 /* LocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		6618C5752292C27600EB4A97 /* MapPrice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPrice.h; sourceTree = "<group>"; };
+		6618C5762292C27600EB4A97 /* MapPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
+		6618C5782292C59B00EB4A97 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		6618C5792292C59B00EB4A97 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		663F6B5A227DC828007962FB /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
 		663F6B5C227DC836007962FB /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		663F6B5D227DC836007962FB /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
@@ -137,6 +146,12 @@
 				66B35F2E228A2B7A008C6A80 /* TicketsViewController.m */,
 				66B35F24228A1FB6008C6A80 /* TicketTableViewCell.h */,
 				66B35F25228A1FB6008C6A80 /* TicketTableViewCell.m */,
+				6618C5722292BF1700EB4A97 /* LocationService.h */,
+				6618C5732292BF1700EB4A97 /* LocationService.m */,
+				6618C5752292C27600EB4A97 /* MapPrice.h */,
+				6618C5762292C27600EB4A97 /* MapPrice.m */,
+				6618C5782292C59B00EB4A97 /* MapViewController.h */,
+				6618C5792292C59B00EB4A97 /* MapViewController.m */,
 				66A5D1D4227CC1C5009BF9FE /* Assets.xcassets */,
 				66A5D1D6227CC1C5009BF9FE /* LaunchScreen.storyboard */,
 				66A5D1D9227CC1C5009BF9FE /* Info.plist */,
@@ -268,10 +283,13 @@
 				66A5D1F2227D7B1D009BF9FE /* DataManager.m in Sources */,
 				66B35F26228A1FB6008C6A80 /* TicketTableViewCell.m in Sources */,
 				66A5D1DB227CC1C5009BF9FE /* main.m in Sources */,
+				6618C5772292C27600EB4A97 /* MapPrice.m in Sources */,
 				66B35F23228A1103008C6A80 /* Ticket.m in Sources */,
+				6618C5742292BF1700EB4A97 /* LocationService.m in Sources */,
 				665977A42281FF6C005D6884 /* PlaceViewController.m in Sources */,
 				66B35F2F228A2B7A008C6A80 /* TicketsViewController.m in Sources */,
 				66A5D1EF227D79D5009BF9FE /* Airport.m in Sources */,
+				6618C57A2292C59B00EB4A97 /* MapViewController.m in Sources */,
 				66A5D1E5227D76C6009BF9FE /* MainViewController.m in Sources */,
 				66A5D1CD227CC1C5009BF9FE /* AppDelegate.m in Sources */,
 			);
