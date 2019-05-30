@@ -8,6 +8,7 @@
 
 #import "MapPrice.h"
 #import "DataManager.h"
+#import "City.h"
 
 @implementation MapPrice
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary withOrigin: (City *)origin
