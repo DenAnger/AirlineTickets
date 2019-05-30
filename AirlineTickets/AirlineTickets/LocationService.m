@@ -7,7 +7,9 @@
 //
 
 #import "LocationService.h"
-#import "MainViewController.h"
+#import "MapPrice.h"
+#import "APIManager.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface LocationService () <CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationManager;
