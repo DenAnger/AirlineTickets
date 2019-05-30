@@ -8,6 +8,8 @@
 
 #import "TicketsViewController.h"
 #import "TicketTableViewCell.h"
+#import "APIManager.h"
+#import "Ticket.h"
 #define TicketCellReuseIdentifier @"TicketCellIdentifier"
 
 @interface TicketsViewController ()
